@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+       
+        <script src = "database.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+        <title>Restaurant Picker</title>
+    </head>
+    <body >
+       
+            <h1>The ultimate restaurant picker:</h1>
+            <hr>
+            <br><br>
+            <button onclick="adding()" class="btn">Add New Restaurant</button>
+            <div class="card">
+                <h4>Please enter name...</h2>
+                <input id="name">
+                <h4>
+                Please enter the cuisine of choice 
+                </h4>
+                <h4>
+                Type 'none' if there are no ideas for the food you want to eat, or choose from the wide variety we have
+                
+                </h4>
+                <br>
+                <h4>
+                    options: Indian,American,Shawarma,African,Asian,Greek,
+                </h4>
+                
+                <h4>
+                    Italian,European,Bakery,South_east_asian,Mexican,Middle_eastern
+                </h4>
+                <input id="cuisine">
+                <h4>
+                How far are you willing to drive?   
+                </h4>
+                <input id="time">
+                
+                <h4 >
+                Do you have anything you want to do nearby? (Mall, Walmart, Costco)
+                </h4>
+
+                <!-- <div class="dropdown">
+                    <button class="dropbtn">
+                        Choose here
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                         -->
+<!-- 
+                    <div class="dropdown-content">
+                      <a href="#">Costco</a>
+                      <a href="#">Walmart</a>
+                      <a href="#">Mall</a>
+                      <a href="#">Toronto </a>
+                      <a href="#">Other Town </a>
+                      <a href="#">Trails and Exploration </a>
+                      <a href="#">Nothing! </a>
+                    </div> -->
+
+                    <button class="choices" onclick="Costco()">
+                        Costco
+                    </button>
+                    <button class="choices" onclick="Walmart()">
+                        Walmart
+                    </button>
+                    <button class="choices" onclick="Mall()">
+                        Mall
+                    </button>
+                    <button class="choices" onclick="Toronto()">
+                        Toronto
+                    </button>
+                    <button class="choices" onclick="Town()">
+                        Other Town
+                    </button>
+                    <button class="choices" onclick="Trail()">
+                      Trails and Exploration
+                    </button>
+                    <button class="choices" onclick="na()">
+                        N/A
+                      </button>
+                    <br>
+                <br>
+                    <button class="btn" onclick="searchy()">
+                        Submit
+                    </button>
+                    <h2 id="name_ans">  </h2>
+                    <h2 id="price_ans">  </h2>
+                    <h2 id="address_ans">  </h2>
+                    <h2 id="time_ans">  </h2>
+                    <h2 id="work_ans">  </h2>
+                    <h2 id="speciality_ans">  </h2>
+                </div>
+
+                <!-- <input id="work"> -->
+                
+              
+                <br><br><br>
+            <div>
+
+                <script src = "sketch.js"></script>
+      
+    </body>
+</html>

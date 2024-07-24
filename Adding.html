@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src = "sketch.js"></script>
+        <script src = "database.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Restaurant Picker</title>
+    </head>
+    <body >
+       
+            <h1>Restaurant Database:</h1>
+            <hr>
+            <br><br>
+            <button onclick="back()" class="btn">Back to Selection</button>
+            <div class="card">
+
+                <!-- // ref : ["name",cost, "address", distance, "other things to do", "specialItems"] -->
+                <br>
+
+                    
+                    <h4>Please enter the cuisine of the restaurant you intend to add </h4>
+                    <input id="i1">
+                    
+                    <h4> What is the name of the restaurant?  </h4>
+                    <input id="i2" >
+                   
+                    <h4> How much is the average cost per person?   </h4>
+                    <input id="i3" type="number">
+                    
+                    <h4> Please enter the address of the restuarant you intend to add  </h4>
+                    <input id="i4">
+
+                    <h4> Please enter the travel time in minutes of the restuarant you intend to add</h4>
+                    <input id="i5" type="number">
+
+
+                    <h4> Please enter the things to do near to the restaurant</h4>
+                    <input id="i6">
+
+                    <h4>Please enter the speciality of the restuarant you intend to add</h4>
+                    <input id="i7">
+
+                   
+                
+                    <br><br>
+                        <button class="btn" onclick="addInMyList()">
+                            Add To My List
+                        </button>
+                        
+                    </div>
+    
+                  
+                
+                
+            <div>
+
+    
+      
+    </body>
+</html>
